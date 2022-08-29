@@ -1,3 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
+* {
+	box-sizing: border-box;
+}
+.grid-container{
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 200px auto auto 200px;
+	grid-template-rows:400px 400px 150px;
+}
+.grid-container > div {
+	text-align: center;
+	background-color: darkturquoise;
+	border: solid 4px black;
+}
+.header {
+	position: sticky;
+	top: 0;
+	text-align: center;
+	background-color: darkslategrey;
+	border: solid 4px black;
+	height: 100px;
+	width: 100%;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 15px grey;
+
+}
+.item3 {
+	grid-area: 1 / 2 / span 2/  span 2;
+}
 
