@@ -4,7 +4,19 @@
 	box-sizing: border-box;
 }
   body {
-	  background-color: #E27D7A7
+ 	background-color: #E27D7A7;
+	min-width: 1080px;
+  	animation: fadeInAnimation linear 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 .grid-container{
 	display: grid;
