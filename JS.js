@@ -5,9 +5,8 @@ const stories =[["The farmer who bought a well", "A rich man once sold a well to
 var page = 0;
 var fact = 0;
 function next() {
-	//make this code work when arrow keys are pressed
 	if (page < stories.length-1){
-		document.getElementById("back").style.backgroundImage = "radial-gradient(#ede2d4, #E0B364)"
+		document.getElementById("back").style.backgroundImage = "radial-gradient(#ede2d4, #cfa553)"
 		document.getElementById("backLeftStory").innerHTML = stories[page][1];
 		document.getElementById("turnPage").style.transition = null;
 		document.getElementById("turnPage").style.transform = "rotateY(-0deg)";
@@ -45,7 +44,7 @@ function next() {
 
 function back() {
 		if (page > 0){
-		document.getElementById("next").style.backgroundImage = "radial-gradient(#ede2d4, #E0B364)";
+		document.getElementById("next").style.backgroundImage = "radial-gradient(#ede2d4, #cfa553)";
 		document.getElementById("backRightStory").innerHTML = stories[page][2];
 		document.getElementById("turnPage").style.transition = null;
 		document.getElementById("turnPage").style.transform = "rotateY(-180deg)";
